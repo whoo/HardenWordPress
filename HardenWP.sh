@@ -1,8 +1,11 @@
 #!/bin/bash
 
+echo "t'es dans wordpres"
+read a
 
-read "t'es dans wordpres"
+[ "x$a" != "xy" ] && exit
 
+echo "Secure"
 
 find -type d -exec chmod 500 {} \;
 find -type f -exec chmod 400 {} \;
